@@ -448,3 +448,9 @@
 #reduce_time .right_sec img{
     width: 100%;
 }
+
+@media (max-width:768px) {
+    #what_is_clonos.section_spacing{
+        padding-bottom: 0;
+    }
+}
