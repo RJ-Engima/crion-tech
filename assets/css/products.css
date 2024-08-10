@@ -50,9 +50,11 @@
 }
 #products_challenges .card_wrapper .challenge_cards h4{
     position: relative;
+    /* color: #f3791c; */
 }
 #products_challenges .card_wrapper .challenge_cards p{
     margin-bottom: 0;
+    color: #4A4A68;
 }
 
 
@@ -89,6 +91,7 @@
 }
 #products_solutions .card_wrapper .solution_cards p{
     margin-bottom: 0;
+    color: #4A4A68;
 }
 #products_solutions .card_wrapper .solution_cards h4::before{
     content: "";

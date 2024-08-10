@@ -225,13 +225,16 @@ h6 {
   padding: 6px 6px 6px 6px;
   color: #256d85;
 }
+/* #D24B5A
+#2b4e86
+#6885b1 */
 section .row {
   max-width: 1280px;
   margin: auto;
 }
 .section_spacing {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 #main_tag {
   margin-top: 75px;
@@ -243,8 +246,8 @@ section .row {
 }
 @media (max-width: 991px) {
   .section_spacing {
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 /*--------------------------------------------------------------
