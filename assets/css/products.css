@@ -14,6 +14,9 @@
     width: 85%;
     margin-left: 0;
 }
+#product_hero .content_wrapper .btn_wrapper{
+    width: 40%;
+}
 
 #product_hero .content_wrapper h1 {
     /* color: #06283d; */
@@ -169,7 +172,16 @@
 #compliance .list_points ul li p {
     margin-bottom: 0;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
+}
+#management_system .list_points ul li p b,
+#proactive_management .list_points ul li p b,
+#compliance .list_points ul li p b {
+    font-weight: 600;
+    background: linear-gradient(180deg, #2b4e86 0%, #D24B5A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #management_system h2,
@@ -228,5 +240,12 @@
     #proactive_management .list_points ul li p,
     #compliance .list_points ul li p {
         font-size: 1rem;
+        line-height: 1.3;
+    }
+    #management_system .list_points ul li img,
+    #proactive_management .list_points ul li img,
+    #compliance .list_points ul li img {
+        width: 16px;
+        height: 16px;
     }
 }

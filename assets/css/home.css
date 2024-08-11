@@ -96,16 +96,6 @@
     }
 }
 
-@media (max-width: 516px) {
-    #hero h1 {
-        font-size: 28px;
-    }
-
-    #hero p {
-        font-size: 14px;
-    }
-}
-
 #hero p {
     font-family: "Lexend Deca", sans-serif;
     color: #fff;
