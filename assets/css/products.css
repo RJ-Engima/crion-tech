@@ -196,7 +196,9 @@
 /* responsive */
 
 @media (max-width: 991px) {
-
+    #product_hero .content_wrapper{
+        padding-bottom: 2rem;
+    }
     #products_challenges .card_wrapper,
     #products_solutions .card_wrapper {
         grid-template-columns: repeat(2, 1fr);
