@@ -1,0 +1,97 @@
+#about_us_hero{
+    background: url(/assets/img/3334896.jpg) no-repeat;
+    background-size: cover;
+    min-height: 630px;
+    display: flex;
+    align-items: center;
+    background-blend-mode: darken;
+}
+#about_us_hero h1, #about_us_hero p{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+#about_us_hero .Book-btn{
+    width: fit-content;
+    margin: auto;
+}
+#what_we_do h2,
+#why_choose_us h2{
+    padding-bottom: 2rem;
+}
+#what_we_do .card_wrapper,
+#why_choose_us .card_wrapper{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+#what_we_do .card_wrapper .content_wrapper,
+#why_choose_us .card_wrapper .content_wrapper{
+    width: 45%;
+    padding: 2rem;
+    border-radius: 24px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+    position: relative;
+    /* border-left: 0.5rem solid #06337E; */
+    background: linear-gradient(360deg, rgba(110, 160, 203, 0.3) 6.78%, rgba(216, 223, 228, 0) 102.94%), rgb(255, 255, 255)
+
+}
+#leaderShip .card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem 2rem;
+    justify-content: center;
+    margin-top: 56px;
+}
+#leaderShip .card_wrapper .content_wrapper {
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid rgb(158 158 158 / 21%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12); */
+}
+#leaderShip .card_wrapper .content_wrapper h4{
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+#leaderShip .card_wrapper .content_wrapper span{
+    display: block;
+    padding-bottom: 1rem;
+    opacity: 0.5;
+    font-family: "Outfit";
+}
+
+/* responsive */
+@media (max-width:991px) {
+    #leaderShip .card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #leaderShip .card_wrapper{
+        margin-top: 1rem;
+    }
+    #what_we_do .card_wrapper, #why_choose_us .card_wrapper{
+        flex-wrap: wrap;
+    }
+    #what_we_do .card_wrapper .content_wrapper, #why_choose_us .card_wrapper .content_wrapper{
+        width: 80%;
+    }
+}
+@media (max-width: 650px) {
+    #leaderShip .card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #leaderShip .card_wrapper{
+        margin-top: 1rem;
+    }
+    #what_we_do .card_wrapper, #why_choose_us .card_wrapper{
+        flex-wrap: wrap;
+    }
+    #what_we_do .card_wrapper .content_wrapper, #why_choose_us .card_wrapper .content_wrapper{
+        width: 100%;
+    }
+}

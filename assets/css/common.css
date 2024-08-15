@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #2f3138;
-  font-family: "Lexend Deca", sans-serif;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 /* width */
@@ -55,9 +58,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Outfit";
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: #06337E;
 }
 
 h1 {
@@ -237,7 +241,7 @@ section .row {
   padding-bottom: 4rem;
 }
 #main_tag {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 #main_tag .container {
   max-width: 1280px;
@@ -267,6 +271,7 @@ section .row {
   max-width: 1280px;
   margin: auto;
   width: 90%;
+  padding: 0;
 }
 #header.header-scrolled,
 #header.header-inner {
@@ -296,7 +301,7 @@ section .row {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 70%;
   transition: all 0.5s;
   max-width: 170px;
 }
@@ -381,7 +386,7 @@ section .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #2b4e86;
+  color: #000;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -425,7 +430,7 @@ section .row {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > .nav-link {
-  color: #2b4e86;
+  color: #000;
 }
 
 .navbar .dropdown ul {
@@ -651,15 +656,16 @@ section .row {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 16px;
+  padding: 8px 16px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 24px;
   transition: 0.5s;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background-color: #2b4e86;
+  background-color: #06337E;
   display: block;
+  min-width: 150px;
 }
 .Book-btn-outline {
   font-family: "Lexend Deca", sans-serif;
@@ -667,15 +673,14 @@ section .row {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 16px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 24px;
   transition: 0.5s;
-
-  color: #06283d;
+  color: #06337E;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   background-color: #fff;
-  border: 2px solid #06283d;
+  min-width: 150px;
 }
 
 /*--------------------------------------------------------------
@@ -895,7 +900,7 @@ footer .container .row {
   }
   .Book-btn, .Book-btn-outline{
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 4px 16px;
   }
   #Contact{
     padding: 40px 0 0px 0;
