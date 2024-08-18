@@ -629,9 +629,11 @@ section .row {
   border-radius: 6px;
   width: 100%;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 .mainMenu .subMenu .subItem .nav-link{
   padding: 8px;
+  cursor: pointer;
 }
 .mainMenu .subMenu .subItem:hover{
   background: #2b4e86;
@@ -654,7 +656,6 @@ section .row {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 1px;
   display: inline-block;
   padding: 8px 16px;
   text-align: center;
@@ -664,14 +665,12 @@ section .row {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   background-color: #06337E;
-  display: block;
   min-width: 150px;
 }
 .Book-btn-outline {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 1px;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 24px;
@@ -687,8 +686,9 @@ section .row {
 # Footer
 --------------------------------------------------------------*/
 #Contact {
-  /* background: linear-gradient(180.05deg, #06283D 0.04%, rgba(20, 60, 88, 0.79) 99.95%); */
-  background-image: url(../img/contact/con-2.png);
+  background: #000;
+  /* background: linear-gradient(180.05deg, #07337e 40%, rgb(7 51 126 / 60%) 100%); */
+  /* background-image: url(../img/contact/con-2.png); */
   overflow: hidden;
   padding: 80px 0 0px 0;
   color: #eee;
@@ -705,11 +705,11 @@ section .row {
   right: 0px;
   /* background-image: url(../img/contact/cont-1.png); */
   /* opacity: .5; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180.05deg,
     #06283d 0.04%,
     rgba(20, 60, 88, 0.79) 99.95%
-  );
+  ); */
 }
 
 #Contact .section-main-header {
@@ -718,7 +718,7 @@ section .row {
 }
 
 #Contact .section-main-header h2 {
-  color: #ffffff;
+  color: #06337E;
   opacity: 0.05;
 }
 
@@ -792,6 +792,7 @@ footer .container .row {
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
+  opacity: 0.7;
 }
 
 .copyright_box {
