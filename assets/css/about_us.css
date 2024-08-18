@@ -1,12 +1,12 @@
 #about_us_hero{
     /* background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%); */
     background: url(/assets/img/3334896.jpg) no-repeat;
-    background-size: cover;
     min-height: 630px;
     display: flex;
     align-items: center;
     position: relative;
     background-attachment: fixed;
+    background-position: right;
 }
 /* #about_us_hero::before{
     position: absolute;

@@ -16,6 +16,7 @@
     flex-direction: column;
     padding: 125px 0px;
     min-height: 630px;
+    background-position: bottom;
 }
 /* #hero::before{
     filter: brightness(0.1) saturate(0%);
