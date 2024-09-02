@@ -554,5 +554,8 @@
     #our_products .solution_wrapper .row{
         padding: 20px 0;
     }
+    #our_products .card_wrapper .solutions_cards{
+        box-shadow: 0px 0px 1.5965277777777778vw 0px rgba(0, 0, 0, 0.09);
+    }
 }
 

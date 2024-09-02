@@ -70,6 +70,9 @@
 #pricing_section .btn_wrapper .Book-btn{
     width: 100%;
 }
+#pricing_section .btn_wrapper .Book-btn::after{
+    display: none;
+}
 @media (max-width: 1024px) {
     #pricing_section .row {
         grid-template-columns: repeat(2, 1fr);
@@ -80,5 +83,10 @@
     #pricing_section .row {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    #pricing_section .plan_wrapper .plan_title{
+        margin-bottom: 8px;
+    }
+    #pricing_section .plan_wrapper ul .plan_subtext br{
+        display: none;
+    }
 }

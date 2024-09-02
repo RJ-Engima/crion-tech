@@ -658,7 +658,7 @@ section .row {
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
-  padding: 10px 49px 10px 35px;
+  padding: 4px 42px 4px 24px;
   text-align: center;
   border-radius: 24px;
   transition: 0.5s;
@@ -666,7 +666,7 @@ section .row {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   background-color: #06337E;
-  min-width: 150px;
+  min-width: 135px;
   position: relative;
   transition: 0.5s;
 }
@@ -678,7 +678,7 @@ section .row {
   content: "";
   top: 0px;
   bottom: 0px;
-  width: 20px;
+  width: 16px;
   height: 100%;
   background: url(/assets/img/arrow.svg)center center / contain no-repeat;
   right: 21px;
@@ -696,7 +696,7 @@ section .row {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   background-color: #fff;
-  min-width: 150px;
+  min-width: 135px;
   position: relative;
   transition: 0.5s;
 }
@@ -927,13 +927,18 @@ footer .container .row {
   }
   .Book-btn, .Book-btn-outline{
     font-size: 12px;
-    padding: 4px 16px;
+    padding: 4px 42px 4px 24px;
   }
   #Contact{
     padding: 40px 0 0px 0;
   }
 }
-
+@media (max-width:600px) {
+  .footer-links .link_div{
+    width: 100%;
+    padding-left: 45px;
+  }
+}
 @keyframes btnArrow {
   0% {
     transform: scale3d(1, 1, 1);
