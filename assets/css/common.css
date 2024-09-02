@@ -42,7 +42,6 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #fff;
   outline: none;
   text-decoration: none;
 }
@@ -391,10 +390,10 @@ section .row {
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
-  transition: 0.3s;
   position: relative;
   padding: 6px 4px;
   cursor: pointer;
+  transition: unset;
 }
 
 .navbar .nav-link i,
@@ -543,7 +542,6 @@ section .row {
   left: 0px;
   padding: 10px 0;
   background-color: rgb(6 40 61);
-  transition: 0.4s;
   width: 365px;
 }
 
@@ -608,13 +606,11 @@ section .row {
 .mainMenu .subMenu{
   opacity: 0;
   position: absolute;
-  /* display: block; */
   flex-direction: column;
-  /* z-index: 99999; */
   background: #fff;
   justify-content: start;
   align-items: self-start;
-  padding: 16px 8px;
+  padding: 10px 12px;
   border-radius: 6px;
   transform: translate(0%, -100%);
   z-index: -999;
@@ -628,28 +624,33 @@ section .row {
 .mainMenu .subMenu .subItem{
   border-radius: 6px;
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   cursor: pointer;
+  min-width: 200px;
 }
 .mainMenu .subMenu .subItem .nav-link{
   padding: 8px;
   cursor: pointer;
+  line-height: normal;
 }
 .mainMenu .subMenu .subItem:hover{
   background: #2b4e86;
 }
 .mainMenu .subMenu .subItem:hover .nav-link{
   color: #fff;
+
 }
 @media (max-width:991px) {
   .mainMenu .subMenu{
-    position: relative;
-    opacity: 1;
     transform: translate(0%, 0%);
     z-index: 99;
     background: transparent;
     box-shadow: unset;
     padding: 0px 16px 0 32px;
+  }
+  .mainMenu .mainItem:hover .subMenu{
+    position: relative !important;
+    opacity: 1 !important;
   }
 }
 .Book-btn {
@@ -657,7 +658,7 @@ section .row {
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 49px 10px 35px;
   text-align: center;
   border-radius: 24px;
   transition: 0.5s;
@@ -666,6 +667,22 @@ section .row {
   animation-delay: 0.8s;
   background-color: #06337E;
   min-width: 150px;
+  position: relative;
+  transition: 0.5s;
+}
+.Book-btn:hover:after {
+  animation: btnArrow 1.5s ease 0s 1 normal forwards;
+}
+.Book-btn:after,.Book-btn-outline:after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  bottom: 0px;
+  width: 20px;
+  height: 100%;
+  background: url(/assets/img/arrow.svg)center center / contain no-repeat;
+  right: 21px;
+  transition: 0.5s;
 }
 .Book-btn-outline {
   font-family: "Lexend Deca", sans-serif;
@@ -680,15 +697,16 @@ section .row {
   animation-delay: 0.8s;
   background-color: #fff;
   min-width: 150px;
+  position: relative;
+  transition: 0.5s;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #Contact {
-  background: #000;
-  /* background: linear-gradient(180.05deg, #07337e 40%, rgb(7 51 126 / 60%) 100%); */
-  /* background-image: url(../img/contact/con-2.png); */
+  background: url(/assets/img/footer_bg.svg) no-repeat;
+  background-size: cover;
   overflow: hidden;
   padding: 80px 0 0px 0;
   color: #eee;
@@ -703,13 +721,6 @@ section .row {
   left: 0px;
   bottom: 0px;
   right: 0px;
-  /* background-image: url(../img/contact/cont-1.png); */
-  /* opacity: .5; */
-  /* background: linear-gradient(
-    180.05deg,
-    #06283d 0.04%,
-    rgba(20, 60, 88, 0.79) 99.95%
-  ); */
 }
 
 #Contact .section-main-header {
@@ -752,7 +763,7 @@ footer .container .row {
   max-width: 1280px;
   margin: auto;
 }
-.footer-contact h2 {
+.footer-contact h4 {
   font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   color: #ffffff;
@@ -786,7 +797,7 @@ footer .container .row {
 
 .footer-contact .contact_info_box p {
   margin: 0px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -794,7 +805,22 @@ footer .container .row {
   color: #ffffff;
   opacity: 0.7;
 }
-
+.footer-links{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-links h4{
+  color: #fff;
+}
+.footer-links ul{
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links ul li{
+  margin-bottom: 8px;
+}
 .copyright_box {
   border-top: 1px solid rgb(221 221 221 / 43%);
   position: relative;
@@ -905,5 +931,29 @@ footer .container .row {
   }
   #Contact{
     padding: 40px 0 0px 0;
+  }
+}
+
+@keyframes btnArrow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }

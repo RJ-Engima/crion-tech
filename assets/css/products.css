@@ -13,7 +13,9 @@
     background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%);
     /* background: linear-gradient(rgb(0, 57, 94) 0%, rgb(0, 24, 40) 100%); */
 }
-
+#product_hero .img_wrapper img{
+    border-radius: 20px;
+}
 #product_hero .content_wrapper {
     width: 85%;
     margin-left: 0;
@@ -126,12 +128,10 @@
 #products_solutions .card_wrapper .solution_cards {
     width: 90%;
     margin: auto;
-    min-height: 185px;
-    padding: 30px;
+    min-height: 200px;
+    padding: 16px;
     border-radius: 20px;
     margin-bottom: 2rem;
-    /* background: linear-gradient(180deg, #2b4e86 0%, #D24B5A 100%); */
-    background: linear-gradient(180deg, rgba(110, 160, 203, 0.3) 6.78%, rgba(216, 223, 228, 0) 102.94%), rgb(255, 255, 255);
     /* background-color: #fff; */
     /* border: 1px solid rgba(255, 255, 255, 0.2); */
 
@@ -141,6 +141,10 @@
 
 #products_solutions .card_wrapper .solution_cards h4 {
     position: relative;
+    background: #f7f7f7;
+    border-radius: 14px 30px 14px 30px;
+    padding: 1rem;
+    /* min-height: 90px; */
 }
 
 #products_solutions .card_wrapper .solution_cards p {
@@ -148,7 +152,7 @@
     color: #4A4A68;
 }
 
-#products_solutions .card_wrapper .solution_cards h4::before {
+/* #products_solutions .card_wrapper .solution_cards h4::before {
     content: "";
     position: absolute;
     top: 0;
@@ -158,7 +162,7 @@
     width: 3px;
     border-radius: 3px;
     background: #06283d;
-}
+} */
 
 #management_system .left_sec,
 #compliance .left_sec {
