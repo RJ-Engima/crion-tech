@@ -183,11 +183,6 @@
         width: 100%;
         font-size: 14px;
     }
-
-    #hero .Contact-btn,
-    #hero .Book-btn {
-        padding: 12px 20px;
-    }
 }
 
 @keyframes pulse-border {

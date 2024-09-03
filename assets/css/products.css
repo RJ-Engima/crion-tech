@@ -266,6 +266,12 @@
     }
 }
 
+@media (max-width:768px) {
+    #product_hero.vr_ots::before{
+        background-size: cover;
+    }
+}
+
 @media (max-width: 650px) {
     #product_hero .content_wrapper {
         width: 100%;
