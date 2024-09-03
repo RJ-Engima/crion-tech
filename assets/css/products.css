@@ -10,9 +10,10 @@
     display: flex;
     align-items: center;
     min-height: 630px;
-    background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%);
-    /* background: linear-gradient(rgb(0, 57, 94) 0%, rgb(0, 24, 40) 100%); */
+    /* background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%); */
+    background: linear-gradient(rgb(0, 57, 94) 0%, rgb(0, 24, 40) 100%);
 }
+
 #product_hero .img_wrapper img{
     border-radius: 20px;
 }
@@ -296,4 +297,61 @@
         width: 16px;
         height: 16px;
     }
+}
+
+/* seperate bg for hero section */
+#product_hero.clonos_twin::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/products/Digital-twin-hero.jpeg) no-repeat;
+    background-size: cover;
+    filter: blur(18px);
+}
+#product_hero.ar_assits::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/products/AR-Hero.JPEG) no-repeat;
+    background-size: cover;
+    filter: blur(18px);
+}
+#product_hero.process_management::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/products/process-hero.jpeg) no-repeat;
+    background-size: cover;
+    filter: blur(18px);
+}
+#product_hero.saas_platform::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/products/Saas.jpeg) no-repeat;
+    background-size: cover;
+    filter: blur(18px);
+}
+#product_hero.vr_ots::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/products/VR-Hero.JPEG) no-repeat;
+    background-size: 150%;
+    filter: blur(18px);
 }
