@@ -419,21 +419,36 @@
     #our_solutions .solution_wrapper .row:nth-child(even) .content_wrapper{
         padding-left: 0;
     }
-    #our_solutions .solution_wrapper .row:nth-child(odd){
-        flex-direction: column-reverse;
+}
+
+@media (max-width: 1024px) {
+    #our_products .solution_wrapper .row.card_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #our_solutions .solution_wrapper .row.card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    #our_products .solution_wrapper .row.card_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #our_solutions .solution_wrapper .row.card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #hero{
+        min-height: unset;
     }
 }
 
 @media (max-width: 768px) {
-    #our_solutions .card_wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
+
     #our_solutions .solution_wrapper .card_wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
-    /* #our_solutions .solution_wrapper .row:nth-child(odd) .content_wrapper{
-        padding-left: 0;
-    } */
+    #our_products .solution_wrapper .card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
     #our_solutions .solution_wrapper .row{
         padding: 20px 0;
     }
@@ -442,17 +457,6 @@
     }
 }
 
-/* what is clonos */
-#what_is_clonos {
-    /* background-color: #f6f9fc; */
-}
-#what_is_clonos .container{
-    /* padding: 2rem; */
-    /* background: #06337e0d; */
-    /* border-radius: 2rem; */
-    /* max-width: 1080px; */
-    /* margin: auto; */
-}
 #what_is_clonos .content_wrapper p {
     opacity: 0.7;
     font-weight: 400;
@@ -481,6 +485,9 @@
 @media (max-width:991px) {
     #what_is_clonos.section_spacing{
         padding-bottom: 0;
+    }
+    #what_is_clonos.section_spacing .row{
+        flex-direction: column-reverse;
     }
     #what_is_clonos .row .content_wrapper,
     #our_solutions .solution_wrapper .row:nth-child(odd) .content_wrapper,
@@ -557,17 +564,10 @@
     margin-bottom: 0;
     color: #000;
 }
-@media (max-width: 1024px) {
-    #our_products .card_wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 
 @media (max-width: 768px) {
     #our_products .card_wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    #our_products .solution_wrapper .card_wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
     #our_products .solution_wrapper .row{

@@ -113,10 +113,9 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function (e) {
+  on('click', '.hamburger_icon', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    this.classList.toggle('active')
   })
 
   /**
@@ -161,118 +160,118 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
   /**
    * Team Slider
    */
 
-  new Swiper('.Team-slider', {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    mousewheel: true,
-    keyboard: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      575: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      992: {
-        slidesPerView: 5,
-        spaceBetween: 25
-      }
-    }
-  });
+  // new Swiper('.Team-slider', {
+  //   cssMode: true,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   mousewheel: true,
+  //   keyboard: true,
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
+  //     575: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 20
+  //     },
+  //     992: {
+  //       slidesPerView: 5,
+  //       spaceBetween: 25
+  //     }
+  //   }
+  // });
 
-  new Swiper('.Client_review-slider', {
-    spaceBetween: 40,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      575: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      }
-    }
-  });
+  // new Swiper('.Client_review-slider', {
+  //   spaceBetween: 40,
+  //   freeMode: true,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
+  //     575: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
+  //     768: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 30
+  //     },
+  //     992: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40
+  //     }
+  //   }
+  // });
 
   /**
    * Gallery Slider
    */
-  new Swiper('.gallery-slider', {
-    speed: 400,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      575: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      }
-    }
-  });
+  // new Swiper('.gallery-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   centeredSlides: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   },
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
+  //     575: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 20
+  //     },
+  //     768: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20
+  //     },
+  //     992: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20
+  //     }
+  //   }
+  // });
 
   /**
    * Initiate gallery lightbox
    */
-  const galleryLightbox = GLightbox({
-    selector: '.gallery-lightbox'
-  });
+  // const galleryLightbox = GLightbox({
+  //   selector: '.gallery-lightbox'
+  // });
 
   /**
    * Buy tickets select the ticket type on click
    */
-  on('show.bs.modal', '#buy-ticket-modal', function (event) {
-    select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')
-  })
+  // on('show.bs.modal', '#buy-ticket-modal', function (event) {
+  //   select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')
+  // })
 
   /**
    * Animation on scroll
