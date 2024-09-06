@@ -333,6 +333,9 @@ section .row {
   #main_tag{
     margin-top: 45px;
   }
+  .footer-links .link_div:first-child{
+    padding-left: 45px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -866,7 +869,7 @@ footer .container .row {
 .footer-links {
   display: flex;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer-links h4 {
   color: #fff;

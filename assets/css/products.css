@@ -273,6 +273,12 @@
 }
 
 @media (max-width:768px) {
+    #products_solutions .card_wrapper .solution_cards .sol_card_title{
+        min-height: unset;
+    }
+    #products_solutions .card_wrapper .solution_cards{
+        min-height: unset;
+    }
     #product_hero.vr_ots::before{
         background-size: cover;
     }
