@@ -712,8 +712,9 @@ section .row {
 .hamburger_icon{
   width: 30px;
   height: 30px;
-  display: flex;
+  display: none;
   align-items: center;
+
 }
 .hamburger_icon .hamburger {
   width: 20px;
@@ -933,6 +934,7 @@ footer .container .row {
 /* font responsive */
 
 @media (max-width: 768px) {
+
   #header #logo img {
     width: 80px;
   }
@@ -972,6 +974,9 @@ footer .container .row {
   }
 }
 @media (max-width: 768px) {
+  .hamburger_icon{
+    display: flex;
+  }
   #main_tag .container {
     width: 95%;
   }
