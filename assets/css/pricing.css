@@ -54,7 +54,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.5s;
 }
+#pricing_section .plan_wrapper:hover{
+    transition: 0.5s;
+    background: linear-gradient(90deg, #0c53cd 0%, #06337e 100%);
+}
+#pricing_section .plan_wrapper:hover ul li p{
+    color: #fff;
+}
+#pricing_section .plan_wrapper:hover .content_wrapper .plan_type{
+    color: #fff;
+}
+#pricing_section .plan_wrapper:hover .content_wrapper .plan_title{
+    color: #fff;
+}
+#pricing_section .plan_wrapper:hover .content_wrapper .plan_subtext{
+    color: #fff;
+}
+#pricing_section .plan_wrapper:hover .content_wrapper .img_wrapper svg path{
+    fill: #fff;
+    stroke: #fff;
+}
+#pricing_section .plan_wrapper:hover .btn_wrapper .Book-btn{
+    background: #fff;
+    color: #06337e;
+}
+
 #pricing_section .plan_wrapper .content_wrapper{
     padding-bottom: 1rem;
 }

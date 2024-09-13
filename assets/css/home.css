@@ -7,7 +7,7 @@
     position: relative;
 
     /* background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%); */
-    /* background: linear-gradient(rgb(0, 57, 94) 0%, rgb(0, 24, 40) 100%); */
+    background: linear-gradient(#0c53cd 0%, #06337e 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,29 +197,34 @@
     }
 }
 
-@-webkit-keyframes pulsate-btn {
+@-webkit-keyframes pulsate-card {
     0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
     }
 
     100% {
-        transform: scale(1, 1);
-        opacity: 0;
+        transform: scale(1.1);
     }
 }
 
-@keyframes pulsate-btn {
+@keyframes pulsate-card {
     0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
     }
 
     100% {
-        transform: scale(1, 1);
-        opacity: 0;
+        transform: scale(1.1);
     }
 }
+
+
 
 /*--------------------------------------------------------------
   # video section
@@ -522,8 +527,10 @@
     margin: auto;
     padding: 2rem;
     border-radius: 0.5rem;
-    background-color: #fff;
-    transition: all 0.5s ;
+    background: #fff;
+    transition: background color 0.5s ;
+    transform: scale(1);
+    transition-delay: 0ms;
     /* border: 1px solid rgb(0 0 0 / 20%); */
 }
 
@@ -537,16 +544,16 @@
     overflow: hidden;
 }
 #our_products .card_wrapper .solutions_cards:hover{
-    transition: all 0.5s ;
-    background: linear-gradient(244deg, rgb(10 0 73) 40%, rgb(21 0 49) 50%);
-    transform: scale(1.1);
+    transition: background color 0.5s ;
+    background: linear-gradient(90deg, #0c53cd 0%, #06337e 100%);
     box-shadow: 0px 0px 1.5965277777777778vw 0px rgba(0, 0, 0, 0.09);
+    /* animation: pulsate-card 1s infinite; */
+
 }
 #our_products .card_wrapper .solutions_cards:hover h4,
 #our_products .card_wrapper .solutions_cards:hover span,
 #our_products .card_wrapper .solutions_cards:hover p{
     color: #fff;
-    transition: all 0.5s ;
 }
 #our_products .card_wrapper .solutions_cards .prod_cta{
     margin-top: 1rem;
@@ -577,4 +584,111 @@
         box-shadow: 0px 0px 1.5965277777777778vw 0px rgba(0, 0, 0, 0.09);
     }
 }
+/* brochures page css */
+#our_brochures{
+    background: #EEF2F7;
+}
+#our_brochures .brochures_wrapper .card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem 2rem;
+    justify-content: center;
+}
 
+#our_brochures .container{
+    margin: auto;
+}
+#our_brochures .brochures_wrapper .row {
+    padding: 60px 0px;
+    justify-content: center;
+}
+
+
+#our_brochures .brochures_wrapper .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 2rem;
+    justify-content: center;
+}
+
+#our_brochures .card_wrapper .brochures_cards {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    transition: background color 0.5s ;
+    transform: scale(1);
+    transition-delay: 0ms;
+    border: 1px solid rgb(0 0 0 / 20%);
+}
+
+#our_brochures .card_wrapper .brochures_cards .learn_cta{
+    border-radius: 50%;
+    padding: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#our_brochures .card_wrapper .brochures_cards:hover{
+    transition: background color 0.5s ;
+    background: linear-gradient(90deg, #0c53cd 0%, #06337e 100%);
+    box-shadow: 0px 0px 1.5965277777777778vw 0px rgba(0, 0, 0, 0.09);
+    /* animation: pulsate-card 1s infinite; */
+
+}
+#our_brochures .card_wrapper .brochures_cards:hover h4,
+#our_brochures .card_wrapper .brochures_cards:hover span,
+#our_brochures .card_wrapper .brochures_cards:hover p{
+    color: #fff;
+}
+#our_brochures .card_wrapper .brochures_cards .prod_cta{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#our_brochures h2 {
+    max-width: 1280px;
+    margin: auto;
+}
+#our_brochures .card_wrapper .brochures_cards p {
+    opacity: 0.7;
+    margin-bottom: 0;
+    color: #000;
+}
+
+#our_brochures .brochures_wrapper .brochures_cards{
+    margin-bottom: 2rem;
+}
+.brochures_wrapper .brochures_points{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.brochures_wrapper .brochures_points h4{
+    margin-bottom: 0;
+}
+
+@media (max-width:600px) {
+    #our_brochures .brochures_wrapper .row{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    #our_brochures .brochures_wrapper .brochures_cards{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:425px){
+    #our_brochures .brochures_wrapper .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

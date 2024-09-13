@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    /* background: linear-gradient(180deg, rgb(7 51 126) 40%, rgb(70 181 255 / 40%) 100%); */
+    background: linear-gradient(#0c53cd 0%, #06337e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 125px 0px;
+    min-height: 630px;
+    background-color: #000;
+}
+#hero::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(/assets/img/cosmic-environment-with-colorful-neon-laser-lights-perfect-digital-wallpaper.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px)
+}
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+#hero .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    z-index: 1;
+    z-index: 99;
+}
+
+@media (max-width: 786px) {
+    #hero .hero-container {
+        width: 100%;
+    }
+
+    #hero::after {
+        width: 200%;
+    }
+}
+#career_work_with_us.section_spacing{
+    padding-top: 1rem;
+}
+#career_work_with_us .job_roles{
+    margin-top: 4rem;
+}
+#career_work_with_us .job_header{
+    display: flex;
+    padding-bottom: 1rem;
+}
+#career_work_with_us .job_header p{
+    font-family: monospace;
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 0;
+    opacity: 0.7;
+    font-size: 18px;
+}
+#career_work_with_us .job_roles .accordion .accordion-item{
+    border: unset;
+    padding-bottom: 1rem;
+}
+#career_work_with_us .job_roles .accordion .accordion-header{
+    border-bottom: 0.5px solid #dedede;
+}
+#career_work_with_us .job_roles .accordion .accordion-header .accordion-button{
+    padding: 1rem 0rem;
+    position: relative;
+}
+#career_work_with_us .job_roles .accordion .accordion-header .accordion-button::after{
+    position: absolute;
+    right: 0;
+}
+#career_work_with_us .job_roles .accordion .accordion-header h4{
+    width: 50%;
+    margin-bottom: 0;
+    color: #000;
+    font-size: 20px;
+}
+#career_work_with_us .job_roles .accordion .accordion-header .accordion-button:not(.collapsed){
+    background-color: unset;
+}
+#career_work_with_us .job_roles .accordion .accordion-header .accordion-button:not(.collapsed) h4{
+    color: #06337e;
+}
+#career_work_with_us .job_roles .accordion .accordion-body{
+    padding: 1rem 0;
+}
+#career_work_with_us .job_roles .accordion .accordion-header .accordion-button:focus{
+    box-shadow: unset;
+    border: unset;
+}
