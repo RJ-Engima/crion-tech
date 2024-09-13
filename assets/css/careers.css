@@ -102,6 +102,16 @@
 #career_work_with_us .job_roles .accordion .accordion-body{
     padding: 1rem 0;
 }
+#career_work_with_us .job_roles .accordion .accordion-body ul{
+    padding-bottom: 0.5rem;
+}
+#career_work_with_us .job_roles .accordion .accordion-body strong{
+    padding-bottom: 0.5rem;
+    display: block;
+}
+#career_work_with_us .job_roles .accordion .accordion-body ul li{
+    padding-bottom: 0.5rem;
+}
 #career_work_with_us .job_roles .accordion .accordion-header .accordion-button:focus{
     box-shadow: unset;
     border: unset;
