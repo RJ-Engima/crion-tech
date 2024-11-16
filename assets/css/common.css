@@ -979,6 +979,9 @@ footer .container .row {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  p{
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   .hamburger_icon{
